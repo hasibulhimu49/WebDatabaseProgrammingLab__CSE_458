@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <center>
+        <h3>COVID-19 Vaccine Registration Form</h3>
+    </center>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+        <table>
+            <tr>
+                <td><label for="name">Full Name:</label></td>
+                <td><input type="text" id="name" name="name" placeholder="Mohammad Hasibul Hasan" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
+                </td>
+            </tr>
+            <tr>
+                <td><label for="nid">National ID / Passport:</label></td>
+                <td><input type="text" id="nid" name="nid" required></td>
+            </tr>
+            <tr>
+                <td><label for="contact">Contact Number:</label></td>
+                <td><input type="text" id="contact" name="contact" placeholder="01XXXXXXXXX"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+        </table>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Address Information</legend>
+        <table>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td><input type="text" id="country" name="country" required></td>
+            </tr>
+            <tr>
+                <td><label for="state">State / Province:</label></td>
+                <td><input type="text" id="state" name="state" required></td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text" id="city" name="city" required></td>
+            </tr>
+            <tr>
+                <td><label for="zip">Zip Code:</label></td>
+                <td><input type="text" id="zip" name="zip" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Full Address:</label></td>
+                <td><textarea id="address" name="address" rows="3" required></textarea></td>
+            </tr>
+        </table>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Vaccine Details</legend>
+        <table>
+            <tr>
+                <td><label for="vaccine">Vaccine Type:</label></td>
+                <td>
+                    <select id="vaccine" name="vaccine">
+                        <option value="Pfizer">Pfizer</option>
+                        <option value="Moderna">Moderna</option>
+                        <option value="AstraZeneca">AstraZeneca</option>
+                        <option value="Johnson">Johnson & Johnson</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dose">Dose Number:</label></td>
+                <td>
+                    <select id="dose" name="dose">
+                        <option value="First Dose">First Dose</option>
+                        <option value="Second Dose">Second Dose</option>
+                        <option value="Booster">Booster</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="center">Preferred Vaccination Center:</label></td>
+                <td><input type="text" id="center" name="center" required></td>
+            </tr>
+            <tr>
+                <td><label for="date">Preferred Date & Time:</label></td>
+                <td><input type="datetime-local" id="date" name="date" required></td>
+            </tr>
+        </table>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Health Information</legend>
+        <table>
+            <tr>
+                <td>Have you tested positive for COVID-19 before?</td>
+                <td>
+                    <input type="radio" name="covid" value="Yes"> Yes
+                    <input type="radio" name="covid" value="No"> No
+                </td>
+            </tr>
+            <tr>
+                <td>Do you have any allergies?</td>
+                <td>
+                    <input type="radio" name="allergy" value="Yes"> Yes
+                    <input type="radio" name="allergy" value="No"> No
+                </td>
+            </tr>
+            <tr>
+                <td>If yes, specify:</td>
+                <td><input type="text" id="allergyDetails" name="allergyDetails"></td>
+            </tr>
+            <tr>
+                <td>Do you have any chronic diseases?</td>
+                <td>
+                    <input type="checkbox" name="disease" value="Diabetes"> Diabetes
+                    <input type="checkbox" name="disease" value="Heart Disease"> Heart Disease
+                    <input type="checkbox" name="disease" value="Lung Disease"> Lung Disease
+                    <input type="checkbox" name="disease" value="Other"> Other
+                </td>
+            </tr>
+        </table>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Consent & Agreement</legend>
+        <table>
+            <tr>
+                <td><input type="checkbox" id="confirm" name="confirm" required></td>
+                <td><label for="confirm">I confirm that the information provided is correct.</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="terms" name="terms" required></td>
+                <td><label for="terms">I agree to the terms and conditions for vaccination.</label></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <br>
+
+    <input type="reset" value="Reset">
+    <input type="submit" value="Register for Vaccination">
+
+</body>
+</html>
