@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Div Practices</title>
+        <style type="text/css"></style>
+
+        <style>
+            #logo {
+                float: left;
+                width: 40px;
+                height: 40px;
+                margin: 0;
+                background-color: rebeccapurple;
+                border-radius: 6px;
+                padding: 10px;
+
+            }
+            #top {
+                float: right;
+                width: 100px;
+                height: 40px;
+                background: #666;
+                border: 1px solid white;
+            }
+            #container {
+                width: 600px;
+                margin: 0 auto;
+                background: #fff;
+            }
+            #header {
+                height: 60px;
+                border-bottom: 1px solid #c7c7c7;
+            }
+            #navbar {
+                clear: both;
+            }
+            #navbar ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+            #navbar ul li {
+                padding: 10px;
+                float: left;
+            }
+            #navbar ul li a {
+                font-size: 12px;
+                float: left;
+            }
+            #banner {
+                background: #666;
+                height: 120px;
+                padding: 20px;
+                clear: both;
+            }
+            #left, #right {
+                float: left;
+                width: 250px;
+                padding: 20px;
+                height: 200px;
+                border: 1px solid #333;
+                color: #fff;
+                background: #000;
+            }
+            #footer {
+                clear: both;
+                background-color: pink;
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="header">
+                <div id="logo">LOGO</div>
+                <div id="top">Top Info</div>
+                <div id="navbar">
+                    <ul>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Google</a></li>
+                        <li><a href="#">MSN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="banner">Banner</div>
+            <div id="left">Left Column</div>
+            <div id="right">Right Column</div>
+        </div>
+
+        <div id="footer">
+            <div>Footer</div>
+        </div>
+    </body>
+</html>
